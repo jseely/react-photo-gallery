@@ -2,18 +2,19 @@
   "name": "react-photo-gallery",
   "version": "5.3.0",
   "description": "Responsive React Photo Gallery Component",
-  "main": "lib/Gallery.js",
-  "author": "Sandy Gonzales",
+  "main": "webpack.config.js",
+  "author": "Justin Seely",
   "license": "MIT",
-  "homepage": "https://github.com/neptunian/react-photo-gallery",
+  "homepage": "https://github.com/jseely/react-photo-gallery",
   "repository": {
     "type": "git",
-    "url": "https://github.com/neptunian/react-photo-gallery.git"
+    "url": "https://github.com/jseely/react-photo-gallery.git"
   },
   "bugs": {
-    "url": "https://github.com/neptunian/react-photo-gallery/issues"
+    "url": "https://github.com/jseely/react-photo-gallery/issues"
   },
   "devDependencies": {
+    "awesome-typescript-loader": "^3.1.2",
     "babel": "^5.8.21",
     "babel-eslint": "^4.0.10",
     "babel-preset-airbnb": "^1.0.1",
@@ -33,7 +34,9 @@
     "react-dom": "^15.4.2",
     "react-images": "~0.5.2",
     "react-measure": "^1.4.5",
-    "sinon": "^1.17.7"
+    "sinon": "^1.17.7",
+    "source-map-loader": "^0.2.1",
+    "typescript": "^2.2.2"
   },
   "peerDependencies": {
     "react": "~15.4.0",
@@ -43,17 +46,7 @@
     "react": "global:React"
   },
   "scripts": {
-    "build": "gulp clean && NODE_ENV=production gulp build",
-    "bump": "gulp bump",
-    "bump:major": "gulp bump:major",
-    "bump:minor": "gulp bump:minor",
-    "examples": "gulp dev:server",
-    "lint": "eslint .",
-    "publish:examples": "gulp publish:examples",
-    "release": "gulp release",
-    "start": "gulp dev",
-    "watch": "gulp watch:lib",
-    "test": "mocha tests/lib/.setup.js tests/spec/GallerySpec.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react",
@@ -63,5 +56,11 @@
     "responsive",
     "image gallery",
     "images"
-  ]
+  ],
+  "dependencies": {
+    "@types/react": "^15.0.21",
+    "@types/react-dom": "^0.14.23",
+    "react": "^15.4.2",
+    "react-dom": "^15.5.3"
+  }
 }
